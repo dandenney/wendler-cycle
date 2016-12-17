@@ -1,7 +1,10 @@
 const test = QUnit.test;
 
 test("Sync test", function(assert){
-  assert.ok("Ok it's working");
+  let input = $('#1rm');
+  let program = input.calculate();
+
+  assert.deepEqual(program, [{week: 1}, {week: 2}, {week: 3}, {week: 4}]);
 });
 
 test("Async test", function(assert) {
