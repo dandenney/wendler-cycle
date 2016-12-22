@@ -32,7 +32,7 @@ function calculateWeekOne(weight) {
   let thirdSet = round(weight * 0.85);
 
 
-  return [`${firstSet}x5`, `${secondSet}x5`, `${thirdSet}x5+`];
+  return [`<span class='set'>${firstSet}</span> <span class='x'>x</span><span class='rep'>5</span>`, `<span class='set'>${secondSet}</span> <span class='x'>x</span> <span class='rep'>5</span>`, `<span class='set'>${thirdSet}</span> <span class='x'>x</span> <span class='rep'>5+</span>`];
 }
 
 function calculateWeekTwo(weight) {
@@ -42,7 +42,7 @@ function calculateWeekTwo(weight) {
   let thirdSet = round(weight * 0.9);
 
 
-  return [`${firstSet}x3`, `${secondSet}x3`, `${thirdSet}x3+`];
+  return [`<span class='set'>${firstSet}</span> <span class='x'>x</span><span class='rep'>3</span>`, `<span class='set'>${secondSet}</span> <span class='x'>x</span> <span class='rep'>3</span>`, `<span class='set'>${thirdSet}</span> <span class='x'>x</span> <span class='rep'>3+</span>`];
 }
 
 function calculateWeekThree(weight) {
@@ -52,7 +52,7 @@ function calculateWeekThree(weight) {
   let thirdSet = round(weight * 0.95);
 
 
-  return [`${firstSet}x5`, `${secondSet}x3`, `${thirdSet}x1+`];
+  return [`<span class='set'>${firstSet}</span> <span class='x'>x</span><span class='rep'>5</span>`, `<span class='set'>${secondSet}</span> <span class='x'>x</span> <span class='rep'>3</span>`, `<span class='set'>${thirdSet}</span> <span class='x'>x</span> <span class='rep'>1+</span>`];
 }
 
 function calculateWeekFour(weight) {
@@ -62,5 +62,5 @@ function calculateWeekFour(weight) {
   let thirdSet = round(weight * 0.6);
 
 
-  return [`${firstSet}x5`, `${secondSet}x5`, `${thirdSet}x5`];
+  return [`<span class='set'>${firstSet}</span> <span class='x'>x</span><span class='rep'>5</span>`, `<span class='set'>${secondSet}</span> <span class='x'>x</span> <span class='rep'>5</span>`, `<span class='set'>${thirdSet}</span> <span class='x'>x</span> <span class='rep'>5</span>`];
 }
