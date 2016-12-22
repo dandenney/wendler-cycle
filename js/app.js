@@ -18,7 +18,7 @@ function getWeight () {
 function outputWendler () {
 
   // Private variables
-  const outputPlan = document.querySelector('#plan');
+  const outputPlan = document.querySelector( '#plan' );
   let mrWendler = calculateWendler( this.value );
 
   // Clear the content
@@ -27,19 +27,17 @@ function outputWendler () {
   // Output values of each week
   mrWendler.forEach( weight => {
 
+    console.log(weight);
+
     // Output markup and values
     // Need a dynamic solution for the hardcoded keys
     outputPlan.innerHTML += `
-      <ul>
-        <li>
-          Week: ${weight.week}
-          <ol>
-            <li>${weight.sets[0]}</li>
-            <li>${weight.sets[1]}</li>
-            <li>${weight.sets[2]}</li>
-          </ol>
-        </li>
-      </ul>
+      <article class='week'>
+        <h5>Week ${weight.week}</h5>
+        <ol>
+          ${ weight.sets.map( set => `<li>${set}</li>` ).join( '') }
+        </ol>
+      </article>
     `
 
   });
